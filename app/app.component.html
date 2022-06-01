@@ -1,0 +1,75 @@
+ <main class="main  container  h-100 mt-3 mb-5 d-flex flex-wrap align-items-center">
+
+   <div class="main-row row p-5 rounded-3 ">
+     <div class="col">
+
+       <div class="row ">
+         <div class="col ">
+           <nav class="navbar navbar-expand navbar-dark  mb-3 rounded-3 ">
+             <form class="navbar-nav ms-auto me-2" (ngSubmit)="search()">
+               <input class="form-control me-2" name="search" type="text" placeholder="madrid" [(ngModel)]="input">
+               <button class="btn btn-primary " type="submit">Search</button>
+             </form>
+           </nav>
+         </div>
+       </div>
+
+
+       <div class="row ">
+         <div class="col ">
+
+           <div class="row w-100">
+             <div class="col mb-3 py-3">
+               <div class="d-flex text-white align-content-center ">
+                 <h5 class="city pe-3">{{name}}</h5>
+                 <p class="my-0">{{temp}}°C</p>
+               </div>
+             </div>
+           </div>
+
+           <div class="row ">
+             <div class="col mb-3 ">
+               <div class="card bg-dark text-white">
+                 <img src="./assets/images/fire.jpg" class="img img-fluid" alt="">
+                 <div class="card-body">
+                   <h5 class="card-title">Temperatura máxima</h5>
+                   <p id="temp-max">{{tempMax}}°C</p>
+                 </div>
+               </div>
+             </div>
+
+             <div class="col mb-3">
+               <div class="card bg-dark text-white ">
+                 <img src="./assets/images/ice.jpg" alt="" class="img img-fluid ">
+                 <div class="card-body">
+                   <h5 class="card-title">Temperatura mínima</h5>
+                   <p id="temp-min ">{{tempMin}}°C</p>
+                 </div>
+               </div>
+             </div>
+
+             <div class="col mb-3 ">
+               <div class="card bg-dark text-white">
+                 <img src="./assets/images/humidity.jpg" alt="" class=" img img-fluid">
+                 <div class="card-body">
+                   <h5 class="card-title">Humedad</h5>
+                   <p id="humidity">{{humidity}}%</p>
+                 </div>
+               </div>
+             </div>
+
+             <div class="col mb-3 ">
+               <div class="card bg-dark text-white">
+                 <img src="./assets/images/wind.jpg" alt="" class="img img-fluid">
+                 <div class="card-body">
+                   <h5 class="card-title">Viento</h5>
+                   <p id="wind">{{wind}} km/h</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+  </main>

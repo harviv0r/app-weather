@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+.img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  min-height: 200px !important;
+  min-width: 200px !important
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main-row {
+  background-color: rgba(68, 143, 201, 0.658) !important;
+}
+
+.card {
+  border: none !important;
+}
+
+.bg{
+  background-color: rgb(239, 252, 255)!important;
+}
